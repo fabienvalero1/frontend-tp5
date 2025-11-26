@@ -19,5 +19,5 @@ Pour lancer le projet, suivez les étapes ci-dessous :
    docker-compose up
    ```
 5. **Accéder à l'application**
-   Backend : ````http://localhost:4000```
-   Frontend : ````http://localhost:3000```
+   Backend : ```http://localhost:4000```
+   Frontend : ```http://localhost:3000```
