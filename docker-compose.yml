@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./backend
+    container_name: tp5-backend
+    ports:
+      - "4000:4000"
+    volumes:
+      - backend-data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: tp5-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  backend-data:
